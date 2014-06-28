@@ -1,0 +1,1053 @@
+/* LiveUpdates theme */
+
+body {
+   font-family: Gentium Book Basic,Geneva,sans-serif;
+   font-size: 0.85em!important;
+   font-weight: 400!important;
+   font-variant: normal !important;
+}
+
+/* header image stuff */
+
+#header {
+   background-image: url(%%header2%%);
+   border-bottom: 1px solid #00425e;
+   height: 120px;
+}
+
+/* top bar header */
+
+#sr-header-area,
+#sr-more-link {
+  background: #3d5982;
+  border-bottom: 1px solid white;
+  font-weight: bold;
+}
+#sr-header-area .dropdown.srdrop .selected,
+#sr-header-area a {
+  color: #ddd;
+}
+#sr-header-area .selected a {
+  color: #5a6575;
+  font-weight: normal;
+}
+#sr-header-area a:hover,
+.srdrop.dropdown .selected:hover {
+  color: white;
+  text-decoration: none;
+}
+#sr-header-area .separator {
+  color: #fff;
+}
+#sr-header-area .dropdown.srdrop .selected {
+  background: none;
+  margin-right: -10px;
+  padding-left: 10px;
+  padding-right: 0;
+}
+#sr-header-area .dropdown.srdrop .selected:after {
+  content: ">";
+  padding: 0 26px 0 5px;
+}
+#sr-header-area .drop-choices a {
+  color: #2e609c;
+}
+.res #sr-header-area {
+  padding-left: 5px;
+}
+.res #RESShortcutsViewport,
+.res .srSep {
+color: #ddd;
+}
+.res #RESShortcutsEditContainer {
+  background: transparent;
+}
+.res #RESShortcutsSort,
+.res #RESShortcutsRight,
+.res #RESShortcutsLeft,
+.res #RESShortcutsAdd,
+.res #RESShortcutsTrash {
+  background: transparent;
+  color: #ddd;
+}
+
+/* this labels a tagged post */
+
+a[href*="#tagged"].title:link {
+   color: red !important;
+   font-style: italic; 
+}
+a[href*="http://www.reddit.com/r/liveupdates/comments/26v0ht/guide_on_how_to_livepublish_an_event_on/"][href*="announcement"].title:visited {
+   color: red !important;
+   font-style: italic;
+}
+
+body.single-page .tabmenu, body.listing-page .tabmenu,
+body.related-page .tabmenu, body.wiki-page .tabmenu {
+   position: absolute;
+   bottom: 0;
+   left: 140px;
+   height: 30px;
+   line-height: 30px;
+   margin-left: 11px;
+   margin-top: 0;
+   display: block;
+}
+body:not(.submit-page) .tabmenu li {
+   margin: 0;
+   height: 30px;
+   display: inline-block;
+}
+body:not(.submit-page) .tabmenu li a {
+   color: white;
+   background: transparent;
+   font-size: 13px;
+   font-weight: normal;
+   padding: 0 9px;
+   height: 27px;
+   display: inline-block;
+}
+body:not(.submit-page) .tabmenu li a:hover {
+   color: white;
+   background: #385278;
+   border-bottom: 3px solid #00425e;
+}
+body:not(.submit-page) .tabmenu li.selected a {
+   border: none;
+   color: white;
+   background: #00425e;
+   border-bottom: 3px solid #00425e;
+}
+.menuarea {
+   padding: 10px;
+   margin: 0;
+   background: white;
+   border: 1px solid #dcdcdc;
+   border-bottom: none;
+}
+#header-img {
+   margin-left: 15px;
+   position: relative;
+   top: 40px;
+}
+
+/* for the download box, feel free to remove */
+
+.titlebox h2 {
+   width: 100%;
+   height: 30px;
+   color: white;
+   background-color: #385278;
+   display: block;
+   font-size: 16px;
+   font-weight: 400;
+   text-align: center;
+   line-height: 31px;
+   margin-top: 8px;
+   margin-bottom: 8px;
+   box-shadow: 2px 2px #394b70;
+}
+.titlebox h2 a, .titlebox h2 a:hover {
+   text-decoration: none;
+   color: white;
+   cursor: pointer;
+}
+.titlebox h2:hover {
+   background-color: #db2114;
+   text-decoration: none;
+   box-shadow: 2px 2px #00212f;
+}
+.titlebox h2:active {
+   background-color: #001017;
+   box-shadow: 2px 2px black;
+}
+
+/* removes the name of the page at the top left */
+.pagename {
+   font-size: 0;
+   visibility: display;
+   font-variant: normal;
+}
+.pagename a {
+   visibility: visible;
+   width: 207px;
+   height: 35px;
+   position: absolute;
+   top: 53px;
+   left: 67px;
+}
+
+/* user menu at the bottom */
+
+#header-bottom-right {
+   font-size: 12px;
+   background: transparent;
+   bottom: 5px;
+   right: 10px;
+   color: #ddd;
+}
+#header-bottom-right a {
+   color: #ddd;
+}
+#header-bottom-right a:hover {
+   color: white;
+}
+#header-bottom-right .user {
+  color: #fff;
+}
+#header-bottom-right .userkarma {
+   border-bottom: 1px dotted #fff;
+}
+#header-bottom-right .separator {
+   color: #bbb;
+}
+#search input[type="text"] {
+   border: 1px solid #dcdcdc;
+   width: 288px;
+   font-size: 13px;
+   padding: 5px;
+}
+.titlebox h1 a {
+   font-size: 0;
+   visibility: hidden;
+}
+.titlebox h1 a:after {
+   content: "LiveUpdates";
+   font-size: 16px;
+   visibility: visible;
+   text-decoration: none;
+   color: red;
+}
+/* .titlebox h1 a:hover {
+   content: "LiveUpdates";
+   font-size: 16px;
+   visibility: visible;
+   text-decoration: none;
+   color: #2e609c;
+} */
+
+.infobar {
+   background: white;
+   border: none;
+   font-size: 13px;
+   padding: 5px 0;
+}
+.res #header-bottom-right {
+   top: auto;
+   bottom: 6px;
+   padding: 0;
+}
+.res #userbarToggle {
+   color: #ddd;
+   background-color: transparent;
+   border-right: none;
+   top: -7px;
+   height: 30px;
+   line-height: 30px;
+   left: -7px;
+}
+.res-navTop #userbarToggle.userbarShow {
+   top: -25px!important;
+   left: -18px;
+}
+.res #RESAccountSwitcherIcon {
+   top: -2px;
+   position: relative;
+}
+.side {
+   margin: 20px 10px 40px auto;
+   padding: 10px!important;
+   border: 1px solid #ccc;
+   box-shadow: 0px 1px #ddd;
+   overflow: hidden;
+   background-color: white;
+   background-repeat: no-repeat;
+   background-position: top;
+   z-index: 100;
+}
+.sidebox.create {
+   display: none;
+}
+.flair {
+   background-color: #0074a4;
+   color: white;
+   border-color: #00425e;
+}
+.submit .nub {
+    display: none;
+}
+.side .submit .spacer {
+    display: none;
+}
+.morelink {
+   font-size: 13px;
+   background: white;
+   border-color: #2e609c;
+}
+
+.morelink:hover {
+   font-size: 13px;
+   color: white;
+   background: #2e609c;
+   border-color: #00425e;
+}
+
+.side .md h3 {
+	margin-top: 1.4em;
+	font-size: 1.4em;
+	font-weight: normal;
+}
+.side .md h4 {
+	font-size: 1.2em;
+	font-weight: normal;
+	color: #555;
+	margin: 1.2em 0 .2em;
+}
+
+.side .md p {
+	font-size: 13px;
+}
+
+.side .md p a {
+	font-size: 12px;
+}
+
+.side .submit { 
+   margin: auto;
+   width: 300px; 
+}
+.subscribers {
+   font-size: 14px;
+}
+.subscribers .word {
+   display: none;
+}
+.subscribers .number:after {
+   content: " Readers"
+}
+.res .subscribers {
+   font-size: 13px;
+   margin-bottom: 5px;
+}
+.users-online {
+   display: inline-block;
+   font-style: italic;
+   color: #385278;
+   font-size: 100%;
+}
+.users-online:before {
+   background: none;
+   display: none;
+}
+.users-online .word {
+   display: none;
+}
+.users-online .number:before {
+   content: "(";
+}
+.users-online .number:after {
+   content: " online now)";
+}
+.res .users-online {
+   font-size: 0%;
+}
+.side .bottom {
+   display: none !important;
+}
+body div.content {
+   margin: 20px 350px 0px 5px !important;
+   padding: 0px 0px 0px !important;
+}
+.flat-vert.title {
+   color: #fff;
+   font-weight: bold;
+}
+.thing .title:visited {
+   color: #0074a4;
+}
+.fancy-toggle-button .add {
+   background: #0074a4;
+   border: 1px solid #00425e;
+   padding: 2px 8px;
+   font-weight: normal;
+}
+.fancy-toggle-button .remove {
+   background: white;
+   color: #111;
+   padding: 2px 8px;
+   border: 1px solid #ddd;
+}
+.res .fancy-toggle-button {
+   margin-bottom: 7px;
+}
+.res .RESshortcutside,
+.res .RESDashboardToggle {
+   padding: 2px 8px!important;
+   font-weight: normal!important;
+   background: #0074a4;
+   border: 1px solid #00425e;
+   color: white;
+}
+.res .RESshortcutside.remove,
+.res .RESDashboardToggle.remove {
+   background: white;
+   color: #111;
+   border: 1px solid #dcdcdc;
+}
+.res .RESshortcutside:not(.remove):hover,
+.res .RESDashboardToggle.add:hover {
+   background: #4B7;
+}
+.link {
+   background: white;
+   border: 1px solid #fff;
+   padding: 10px;
+}
+.link.last-clicked {
+   overflow: visible;
+   border: 1px solid #ddd;
+   border-left: 5px solid #024fa2;
+   padding-left: 6px;
+}
+.linkinfo {
+   border-radius: 2px;
+}
+.link .rank {
+   display: none;
+}
+.link .midcol {
+   margin-left: 10px;
+   margin-right: 25px;
+}
+.link .thumbnail {
+   margin: 0 10px 0 -5px;
+}
+.link .title {
+   color: #2e5380;
+   margin-bottom: 3px;
+   font-weight: 400;
+   font-size: 20px;
+}
+.link span.domain {
+   visibility: hidden;
+}
+.link .domain a {
+   visibility: visible;
+   color: grey;
+}
+.link:hover .domain a {
+   color: red;
+   text-decoration: none;
+}
+.link ul.flat-list li.first a {
+   color: #369;
+}
+.link ul.flat-list li:not(.first) a {
+   font-weight: normal!important;
+}
+hr {
+   border: none;
+   border-top: 1px solid #dcdcdc;
+   margin-top: 10px;
+}
+.commentarea {
+   border: 1px solid #ddd;
+   margin-top: 0;
+   padding: 5px;
+}
+.panestack-title {
+   margin: 10px 310px 0 10px;
+   padding-bottom: 3px;
+   border-bottom: none;
+}
+.panestack-title .title {
+   font-size: 13px;
+   font-weight: bold;
+}
+#noresults {
+   padding: 0 10px 10px;
+}
+.submit-page .content h1 {
+   font-size: 0;
+   visibility: hidden;
+}
+.submit-page .content h1:before {
+   font-size: 16px;
+   content: "Submit to ";
+   visibility: visible;
+}
+.submit-page .content h1 a {
+   visibility: visible;
+   font-size: 16px;
+}
+.submit-page .formtabs-content {
+   border-top: none;
+}
+.titlebox .bottom {
+   border-top: 1px solid #ddd;
+}
+.res .side .tagline {
+   margin-top: 7px;
+}
+.res .side .toggle.flairtoggle input {
+   margin-top: 18px;
+}
+.res .side .titlebox h1+div {
+   margin-bottom: 7px;
+}
+.linkinfo .upvotes {
+   color: #0074a4;
+}
+.linkinfo .downvotes {
+   color: #0074a4;
+}
+
+/* broken for now :(
+.login-form-side {
+   border: 1px solid #dcdcdc;
+   margin: -10px 0;
+   border-radius: 2px;
+}
+.login-form-side input[type="password"] {
+   width: 120px;
+}
+.login-form-side input[type="text"],
+.login-form-side input[type="password"] {
+   border: 1px solid #ddd;
+   width: 120px;
+}
+.login-form-side #remember-me {
+   margin: 0 4px;
+}
+.login-form-side #reset-password {
+   color: #dcdcdc !important;
+}
+.login-form-side .submit {
+   margin: 10px 4px;
+}
+*/
+
+/* edits the color of mods and submitters */
+
+.tagline .submitter {
+   color: green
+}
+.tagline .moderator, .green {
+   color: hotpink
+}
+.tagline .admin {
+   color: grey
+}
+.tagline .friend {
+   color: orange
+}
+
+/* Comment Area  */
+.commentarea .usertext-edit textarea {
+    background: url(%%commentarea2%%) no-repeat 0 4px;
+}
+
+.commentarea .usertext-edit textarea:active,
+.commentarea .usertext-edit textarea:focus{
+    background: none;
+}
+/*Disable Downvotes*/
+Code:#siteTable .midcol .arrow.down {display: none}
+
+/*Sticky Message at the top*/
+.subscriber > .content:before { content: 'PM the Mods to be added as an Approved Submitter'; font-size: 100%; font-weight: 600; color: #385278; background: #eee; padding: 5px 8px; border-radius: 5px; margin: 3px 0; display: inline-block; }
+
+.linkflair-News .linkflairlabel {
+   background-color: #0074a4;
+   color: white;
+   border-color: #00425e;
+   font-size: 13px;
+   font-weight: bold;
+}
+.linkflair-one .linkflairlabel {
+   background-color: #cf4c4c;
+   color: white;
+   border-color: #00425e;
+   font-size: 13px;
+   font-weight: bold;
+}
+
+.linkflair-two .linkflairlabel {
+   background-color: #cfc510;
+   color: white;
+   border-color: #00425e;
+   font-size: 13px;
+   font-weight: bold;
+}
+
+.linkflair-three .linkflairlabel {
+   background-color: #cf6310;
+   color: white;
+   border-color: #00425e;
+   font-size: 13px;
+   font-weight: bold;
+}
+
+.linkflair-four .linkflairlabel {
+   background-color: #cf3610;
+   color: white;
+   border-color: #00425e;
+   font-size: 13px;
+   font-weight: bold;
+}
+
+.linkflair-five .linkflairlabel {
+   background-color: #eb344c;
+   color: white;
+   border-color: #00425e;
+   font-size: 13px;
+   font-weight: bold;
+}
+
+.linkflair-six .linkflairlabel {
+   background-color: #b510de;
+   color: white;
+   border-color: #00425e;
+   font-size: 13px;
+   font-weight: bold;
+}
+
+.linkflair-seven .linkflairlabel {
+   background-color: #560bb8;
+   color: white;
+   border-color: #00425e;
+   font-size: 13px;
+   font-weight: bold;
+}
+
+.linkflair-eight .linkflairlabel {
+   background-color: #347bd1;
+   color: white;
+   border-color: #00425e;
+   font-size: 13px;
+   font-weight: bold;
+}
+
+.linkflair-nine .linkflairlabel {
+   background-color: #11a6ba;
+   color: white;
+   border-color: #00425e;
+   font-size: 13px;
+   font-weight: bold;
+}
+
+.linkflair-ten .linkflairlabel {
+   background-color: #11ba82;
+   color: white;
+   border-color: #00425e;
+   font-size: 13px;
+   font-weight: bold;
+}
+
+.linkflair-eleven .linkflairlabel {
+   background-color: #20a30c;
+   color: white;
+   border-color: #00425e;
+   font-size: 13px;
+   font-weight: bold;
+}
+
+.linkflair-twelve .linkflairlabel {
+   background-color: #a35f0c;
+   color: white;
+   border-color: #00425e;
+   font-size: 13px;
+   font-weight: bold;
+}
+
+.linkflair-mod .linkflairlabel {
+   background-color: #0c873d;
+   color: white;
+   border-color: #00425e;
+   font-size: 13px;
+   font-weight: bold;
+}
+
+.side .md {
+    background: url(%%breaking%%) no-repeat;
+    padding-top: 300px;
+}
+
+/* Report button message */
+.report-button:hover:after {
+    position: absolute;
+    display: block;
+    z-index: 1000;
+    padding: 5px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #fff;
+    content: "Please only report posts that actually violate the subreddit's rules.";
+    text-align: center;
+    font-size: 10px;
+    font-weight: normal;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+/* Color Overwrites */
+
+.newComments {
+	color: #D11B24 !important;
+}
+
+/* Fixing edit box on stylesheets and wiki pages */
+.wiki-page .wiki-page-content,.sheets {
+	margin-right:350px;
+}
+
+.sheets .col textarea, textarea#wiki_page_content { 
+	padding: 10px;
+	border: 1px solid #666;
+	font-size: 12px;
+	line-height: 1.4em;
+}
+
+/* Custom wiki tab */
+
+.tabmenu li a{
+    -moz-border-top-left-radius: 3px;
+    border-top-left-radius: 3px;
+    -moz-border-top-right-radius: 3px;
+    border-top-right-radius: 3px;
+    border: 1px solid;
+    padding-top: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+} 		 
+.tabmenu [href$="/wiki/"]{
+    -moz-border-top-left-radius: 3px;
+    border-top-left-radius: 3px;
+    -moz-border-top-right-radius: 3px;
+    border-top-right-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 6px;
+    padding-right: 3px !important;
+    padding-top: 2px !important;
+    padding-bottom: 0px;
+} 
+.tabmenu [href$="/top/"] {
+    margin-left: -5px;
+}
+
+.tabmenu [href$="/wiki/"]:after {
+    font-size: 14px;
+    font-weight: bold;
+    content: ' of LU';
+    display: inline-block;
+    padding: 1px 5px 0;
+}
+
+/* Custom sticky post */
+
+.stickied {
+    background-color: #def!important;
+    border: 1px solid #51AEFF!important;
+}
+.stickied .title {
+    color:black!important;
+}
+.stickied-tagline {
+    color:Red!important;
+}
+
+.stickied-tagline:after {
+    content:' (this spot is reserved for mod posts & Current Live Events)';
+    font-size:10px;
+}
+
+/* Report to mods link */
+.comment .report-button {
+  color: #454545;
+}
+.comment .report-button .option.main a {
+  color: #FFF!important;
+  font-size: 0;
+}
+.comment .report-button .option.main a:after {
+  content: "report to mods";
+  color: #454545!important;
+  font-size: 10px;
+}
+.comment .report-button .option.error a {
+  color: #DE552F!important;
+}
+
+/* Thank you message once report button is clicked, again for OPs only */
+.post-submitter .comment .report-button .option.error:after {
+    content: ' - thanks, OP! ';
+    color: #f00;
+}
+
+/* Hover over report button for OPs */
+.post-submitter .report-button .option:not(.error):hover:before { content: 'Please report comments that break our rules'; }
+
+/* Green reply button... for OPs */
+.post-submitter .comment li a[onclick*="reply"] { 
+    color: #282;
+    font-size: 10px;
+}
+
+/* Nags on submit page: */
+.submit-page #title-field .title:after{
+	content:" Creating a live event? Self-Posts (should be tittled) -Event Name [Be Descriptive here]). Also don't forget to tag your event";}
+
+.submit-page #text-field .title:after{
+	content:" You must have at least 500 characters in your submission text. There is no maximum limit. A typical post that passes the minimum requirement is usually 4-5 sentences.";}
+
+/* Remove the default "You are submitting a text post..." box at the top; the nags introduced by this style make it redundant. */
+.submit-page #text-desc{
+	display: none;}
+
+/* Remove the "(optional)" from the "Text" field label -- use of the text field for details should be encouraged. */
+.submit-page #text-field .gray{
+	display: none;}
+
+/* Nag styling. */
+.submit-page .roundfield{
+	background: #eee;}
+
+.submit-page #title-field .title,
+.submit-page #text-field .title,
+.submit-page #reddit-field .title{
+	display: block;
+	text-transform:capitalize;}
+
+.submit-page #title-field .title:after,
+.submit-page #text-field .title:after{
+	display: block;
+	color: #DC1623;
+        font-weight: normal;
+	text-transform:none;
+	font-size: 0.7em;
+        font-family: Raleway,sans-serif;}
+      
+/*Removes "create community" box */
+div.sidebox.create{display: none;}
+
+
+/* Removes downvoting globally, for both submissions and comments */
+.arrow.down {display: none}
+
+/* Cleaner mod box plus new message the mods button */
+.side .spacer .helplink {
+    position: relative;
+    top: 1.8em;
+    background: #db2114;
+    padding: 6px 0;
+    text-indent: 11px;
+    z-index: 1;
+    color: #fff;
+    font-weight: normal;
+    font-size: 13px;
+    width: 299px;
+    display: block;
+}
+
+/* Submit button hover-over 
+.sidebox.submit:hover:before {
+    position: fixed;
+    display: block;
+    top: 0;
+    text-align: center;
+    background-color: #449EF8;
+    color: #fff;
+    z-index: 1000;
+    padding: 6px 0;
+    width: 100%;
+    left: 0;
+    font-size: 16px;
+    font-weight: normal;
+    content: "Please use the search feature to see if your view has been posted recently.";
+    } */
+
+/* Distinct/readable code (inline &amp; blocks) by Keist */
+.usertext-body pre { margin: 10px 0; padding: 10px;}
+.usertext-body pre, .usertext-body p &gt code { background: #f6f6f6; border: 1px solid #ccc; -moz-border-radius: 2px; -webkit-border-radius: 2px; -o-border-radius: 2px; -ms-border-radius: 2px; -khtml-border-radius: 2px; border-radius: 2px;}
+.usertext-body code { color: #222; font-family: Consolas, Monaco, monospace; line-height: 1.5em;}
+.usertext-body p &gt code { padding: 0 3px}
+
+/* wiki styles - credits /r/fitness, /r/aikido, and /r/madrid*/
+.wiki div.toc &gt ul {
+    width: 600px;
+    overflow: hidden;
+    background-color: #fff !important;
+    border: 1px solid;
+    padding-top: 30px !important;
+}
+
+.wiki div.toc &gt ul:before {
+    display: block !important;
+    content: "Contents";
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: normal;
+    color: #666;
+    text-align: center;
+    margin-top: -25px;
+    width: 600px;
+    position: absolute !important;
+}
+
+.wiki div.toc ul {
+    list-style-type: circle !important;
+}
+
+/*Wiki Table of Contents*/
+.wiki-page .wiki-page-content {margin-right: 0px;}
+/*.wiki .toc { 
+    float: right; 
+}
+.wiki .toc + * { 
+    clear: right; 
+}*/
+
+.md.wiki &gt .toc &gt ul ul ul {
+    display: none;
+}
+.md.wiki &gt .toc &gt ul ul {
+    display: none;
+    position: absolute;
+    background-color: #efefef;
+    margin: -1px 0 0 5px !important;
+    padding: 3px 3px 3px 5px !important;
+    border: 1px solid #8D9CAA !important; /* same color as parent TOC */
+}
+
+.md.wiki &gt .toc &gt ul {
+    padding: 3px 25px 3px !important;
+    background-color: #efefef;
+}
+
+
+.wiki a:hover {
+    text-decoration: underline;
+}
+
+.wiki-page .md p,
+.wiki-page .md ul {
+   line-height:150%;
+   font-size: 15px;
+}
+
+.wiki-page .md h1,
+.wiki-page .md h2,
+.wiki-page .md h3,
+.wiki-page .md h4,
+.wiki-page .md h5,
+.wiki-page .md h6 {
+    font-family: Raleway;
+}
+
+body.wiki-page .wiki-page-content .md.wiki h1{
+    border-bottom: solid #fff 1px;
+    border-top: solid #fff 1px;
+    border-left: solid #336699 6px;
+    border-right: solid #fff 1px;
+    padding: 0.25em;
+    color: #111111;
+    margin-top: 20px;
+}
+
+body.wiki-page .wiki-page-content .md.wiki h2{
+    font-size:1.3em; 
+        color: #555;
+}
+
+body.wiki-page .wiki-page-content .md.wiki h3{
+    font-size:1.1em; 
+        color: #444;
+    padding-left:15px;
+}
+
+body.wiki-page .wiki-page-content .md.wiki h4{
+    font-size:0.9em; 
+        color: #333;
+    padding-left:20px;
+}
+
+.wiki a[href*="#link"]{ 
+    color: #222  !important;  
+    font-size: 1.2em;
+    font-weight: normal;  
+}  
+
+/* Moving search bar on submission page - thanks to ELI5 */
+
+.submit-page #search input[type="text"] {
+    top: 330px;
+    position: absolute;
+    z-index: 200;
+    left: 203px;
+    height: 22px;
+    padding: 2px;
+    background-color:white!important
+}
+
+.submit-page #title-field {
+    padding-bottom:15px;
+    padding-top:7px;
+}
+.submit-page #title-field:before {
+    content: "Searched for Events? ➨"
+}
+.submit-page #title-field .roundfield-content {margin-top:10px} 
+
+/* Hover over mod message */
+
+.sidecontentbox .helplink ~ .content { position: relative; z-index: 0; }
+.sidecontentbox .author:hover:after{
+    content: 'Click the button above to message all of the moderators together. Please try to avoid messaging one individually.';
+    position: absolute;
+    top: 10px;
+    left: 115px;
+    width: 176px;
+    background: #f2f2f2;
+    border: 1px solid;
+    padding: 3px;
+}
+
+/* Guideline box style */
+.titlebox .usertext-body ol {
+    border-radius: 1px;
+    border: 1px solid #51AEFF;
+    background-color: #E8F4FF;
+    list-style-type: decimal;
+    padding: 0 20px 5px 35px;
+    margin: 0;
+    font-weight: normal;
+    font-size: 100%;
+    text-align: inherit;
+}
+.titlebox .usertext-body li {
+    margin: 7px 0;
+}
+.titlebox .usertext-body ol ol li {
+    margin: 5px 0;
+}
+
+.titlebox .usertext-body ol ol{
+    list-style-type:lower-alpha;
+    padding: 0;
+    margin-left: 20px;
+    border-width: 0;
+    font-size:100%;
+}
+
+.side .md ol:nth-of-type(1) { list-style-type: upper-alpha; }
+
+    
+/*.thumbnail[href^="/r/liveupdates/"]{display: none} */
+/*.thumbnail img[src^="/static/"]{display: none !important} */
+/*.thumbnail{width: auto !important}*/
+   .thumbnail.default, .thumbnail.self {
+   background-image: url(%%thumb%%);
+   background-position: center !important;
+   background-repeat: no-repeat !important
+}
